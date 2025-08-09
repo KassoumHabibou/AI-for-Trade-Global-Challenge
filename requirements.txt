@@ -1,0 +1,15 @@
+# Core
+pandas==2.2.2
+numpy==2.0.2
+pyarrow==17.0.0
+scikit-learn==1.5.2
+pyyaml==6.0.2
+requests==2.32.3
+tqdm==4.66.4
+
+# Dev & Repro
+jupyter==1.1.1
+pytest==8.3.2
+black==24.8.0
+ruff==0.5.5
+
