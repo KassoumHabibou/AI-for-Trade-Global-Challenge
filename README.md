@@ -111,9 +111,8 @@ AI-for-Trade-Global-Challenge/
 │
 ├── notebooks/                        # Jupyter notebooks
 │   ├── README.md                     # Notebook guidance
-│   ├── SABLE_12_model_training.ipynb # Main model training notebook
-│   ├── comtrade_data_processing.ipynb # Comtrade data processing
-│   └── exploratory_analysis.ipynb    # Data exploration
+│   ├── SABLE_model_training.ipynb    # Main model training notebook
+│   └── comtrade_data_processing.ipynb # Comtrade data processing
 │
 ├── submissions/
 │   ├── README.md                     # Submission guidelines
@@ -195,7 +194,7 @@ python src/pipeline.py --skip-indicators
 
 Open the main modeling notebook:
 ```bash
-jupyter notebook notebooks/SABLE_12_model_training.ipynb
+jupyter notebook notebooks/SABLE_model_training.ipynb
 ```
 
 Or use the forecast script:
@@ -291,7 +290,7 @@ Our modeling approach uses ensemble methods:
    - Cross-validation: By country and product groups
    - Metric: sMAPE (official competition metric)
 
-See `notebooks/SABLE_12_model_training.ipynb` for full details.
+See `notebooks/SABLE_model_training.ipynb` for full details.
 
 ---
 

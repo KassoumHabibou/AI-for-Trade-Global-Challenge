@@ -93,6 +93,6 @@ echo "Intermediate files in: outputs/interim/"
 echo
 echo "Next steps:"
 echo "1. Explore data: jupyter notebook notebooks/exploratory_analysis.ipynb"
-echo "2. Train models: jupyter notebook notebooks/SABLE_12_model_training.ipynb"
+echo "2. Train models: jupyter notebook notebooks/SABLE_model_training.ipynb"
 echo "3. Generate forecast: python src/forecast.py"
 

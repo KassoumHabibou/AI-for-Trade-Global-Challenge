@@ -4,24 +4,25 @@ This directory contains Jupyter notebooks for exploratory analysis, data process
 
 ## 📓 Available Notebooks
 
-### 1. `SABLE_12_model_training.ipynb`
+### 1. `SABLE_model_training.ipynb`
 **Purpose**: Main model training and forecasting notebook
 
 **Contents**:
 - Data loading and preprocessing
-- Feature engineering
-- Model training (ensemble methods)
-- Model evaluation and validation
+- Feature engineering with FRED API integration
+- SABLE-12 model: Seasonal Anchor with Boosted Lagged Exogenous variables
+- Model training with Huber regression
+- Model evaluation and validation (sMAPE metrics)
 - Forecast generation for October 2025
 
 **Requirements**:
 - Processed data from pipeline (outputs/processed/)
-- CatBoost, XGBoost, LightGBM installed
+- CatBoost, category_encoders, fredapi, xlsxwriter installed
 - FRED API key for commodity data
 
 **Usage**:
 ```bash
-jupyter notebook notebooks/SABLE_12_model_training.ipynb
+jupyter notebook notebooks/SABLE_model_training.ipynb
 ```
 
 ---

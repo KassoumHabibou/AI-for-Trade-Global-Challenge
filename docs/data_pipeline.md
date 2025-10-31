@@ -401,7 +401,7 @@ After running the pipeline:
 
 1. **Exploratory Analysis**: See `notebooks/exploratory_analysis.ipynb`
 2. **Feature Engineering**: Create additional features for modeling
-3. **Model Training**: See `notebooks/SABLE_12_model_training.ipynb`
+3. **Model Training**: See `notebooks/SABLE_model_training.ipynb`
 4. **Forecasting**: Generate October 2025 predictions
 5. **Validation**: Check submission format and evaluate
 
