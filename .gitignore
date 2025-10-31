@@ -1,33 +1,122 @@
-# OS
-.DS_Store
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
 .pytest_cache/
-.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
 venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Jupyter
-.ipynb_checkpoints/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-# Tooling
-.mypy_cache/
-.ruff_cache/
-.cache/
+# Project-specific
 
-# Data & Outputs (keep placeholders via .gitkeep)
-inputs/
-!inputs/**/.gitkeep
-outputs/
-!outputs/**/.gitkeep
+# Input data (large files, not version controlled)
+inputs/raw/**
+!inputs/raw/.gitkeep
+inputs/external/**
+!inputs/external/.gitkeep
 
-# Logs
-logs/
+# Output data (generated artifacts)
+outputs/interim/**
+!outputs/interim/.gitkeep
+outputs/processed/**
+!outputs/processed/.gitkeep
+outputs/forecasts/**
+!outputs/forecasts/.gitkeep
+outputs/evaluation/**
+!outputs/evaluation/.gitkeep
+outputs/reports/**
+!outputs/reports/.gitkeep
+
+# Keep reference files (small lookups/mappings)
+# inputs/reference/
+
+# API keys and secrets
+*.key
+.env.local
+secrets.yaml
+
+# Large notebook outputs
+notebooks/*.nbconvert.ipynb
+
+# Temporary files
+*.tmp
+*.bak
 *.log
 
-# Env
-.env
-.env.*
+# Model files (can be large)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
 
+# Data files to ignore
+*.csv.gz
+*.parquet
+*.feather
