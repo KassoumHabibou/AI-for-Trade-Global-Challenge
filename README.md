@@ -5,7 +5,7 @@
 
 This repository contains our solution for the **AI for Trade Global Challenge** organized by the Center for Collective Learning (CCL) with the Observatory of Economic Complexity (OEC). The goal is to forecast international trade flows for the United States and China for October 2025.
 
-## 🎯 Challenge Overview
+## Challenge Overview
 
 - **Objective**: Forecast trade flows (imports & exports) for USA and China in October 2025
 - **Scope**: Top 20 trading partners trading ≥200 HS4 products
@@ -16,7 +16,7 @@ Full challenge details available in [`docs/challenge_details.md`](docs/challenge
 
 ---
 
-## 📊 Our Approach
+## Our Approach
 
 ### Data Sources
 
@@ -119,11 +119,8 @@ AI-for-Trade-Global-Challenge/
 │   └── template_submission.csv       # Example submission format
 │
 ├── tests/
-│   └── test_metrics.py               # Unit tests
-│
-└── [Legacy files - to be deprecated]
-    ├── 1_data_processing.py          # → moved to src/data_processing/
-    └── 2_rajout_donnees_externes.py  # → moved to src/data_processing/
+     └── test_metrics.py               # Unit tests
+
 ```
 
 ---
