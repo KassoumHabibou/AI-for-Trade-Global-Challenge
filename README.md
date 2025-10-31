@@ -213,7 +213,7 @@ bash scripts/evaluate_submission.sh \
 
 ---
 
-## 📋 Data Processing Pipeline Details
+## Data Processing Pipeline Details
 
 ### Step 1: Process Main Trade Data (2023-2024)
 
