@@ -345,7 +345,7 @@ python -m pytest tests/test_metrics.py
 
 ##  Team & Contribution
 
-**Team SABLE** — AI4Trade Global Challenge 2025
+**Team bluebird** — AI4Trade Global Challenge 2025
 
 ### Project Structure Notes
 
@@ -364,9 +364,6 @@ python -m pytest tests/test_metrics.py
 
 ---
 
-##  License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
