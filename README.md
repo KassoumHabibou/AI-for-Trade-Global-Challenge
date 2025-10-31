@@ -254,7 +254,7 @@ Integrates macroeconomic indicators:
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 All paths and parameters are centralized in `configs/config.yaml`:
 
