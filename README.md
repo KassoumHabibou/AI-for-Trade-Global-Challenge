@@ -275,25 +275,26 @@ Edit this file to customize the pipeline behavior.
 
 ##  Model Training
 
-Our modeling approach uses ensemble methods:
+Our modeling approach follows the SABLE methodology:
 
 1. **Feature Engineering**
-   - Temporal features: month trends, seasonality
-   - Categorical encoding: target encoding for countries/products
-   - Economic indicators: normalized and lagged features
-   - Interaction features: country×product, country×month
+   - Temporal signals: seasonality factors and recent lagged trade values  
+   - Categorical encodings: target encodings at product, country, and flow level (train-only, with fallbacks)  
+   - Exogenous variables: macro indicators, exchange rates, and commodity prices selected via lagged correlation and used with causal lags  
 
 2. **Model Architecture**
-   - Primary: CatBoost (handles categorical features natively)
-   - Ensemble: XGBoost, LightGBM, RandomForest
-   - Stacking: Meta-learner combines predictions
+   - Two-stage setup: naive baseline forecast followed by a global residual correction model  
+   - Robust regression approach (Huber) to adjust baseline predictions while preserving stability and outlier resistance  
 
 3. **Validation Strategy**
-   - Time-based split: Last 6 months for validation
-   - Cross-validation: By country and product groups
-   - Metric: sMAPE (official competition metric)
+   - Rolling one-step backtesting over recent periods to match the forecast horizon  
+   - Global training across all product–country pairs, with strict leakage control and consistent feature construction  
 
-See `notebooks/SABLE_model_training.ipynb` for full details.
+4. **Forecast Generation**
+   - Predict next-month values by combining baseline and residual correction  
+   - Apply guardrails (minimum signal floor, growth caps, blending with baseline) to ensure realistic and stable outputs  
+
+Full implementation is documented in `notebooks/SABLE_model_training.ipynb`.
 
 ---
 
