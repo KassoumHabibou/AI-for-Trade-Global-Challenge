@@ -45,7 +45,7 @@ Our forecasting pipeline consists of:
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 AI-for-Trade-Global-Challenge/
@@ -125,7 +125,7 @@ AI-for-Trade-Global-Challenge/
 
 ---
 
-## 🚀 Quickstart
+##  Quickstart
 
 ### 1. Environment Setup
 
@@ -267,7 +267,7 @@ Edit this file to customize the pipeline behavior.
 
 ---
 
-## 📈 Model Training
+##  Model Training
 
 Our modeling approach uses ensemble methods:
 
@@ -291,7 +291,7 @@ See `notebooks/SABLE_model_training.ipynb` for full details.
 
 ---
 
-## 📝 Submission Format
+##  Submission Format
 
 Submissions must be CSV files with columns:
 ```
@@ -314,7 +314,7 @@ Use `src/validate_submission.py` to check format before submitting.
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Run unit tests:
 ```bash
@@ -328,7 +328,7 @@ python -m pytest tests/test_metrics.py
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **Challenge Details**: [`docs/challenge_details.md`](docs/challenge_details.md)
 - **Data Pipeline**: Documentation of each processing step
@@ -337,7 +337,7 @@ python -m pytest tests/test_metrics.py
 
 ---
 
-## 🤝 Team & Contribution
+##  Team & Contribution
 
 **Team SABLE** — AI4Trade Global Challenge 2025
 
@@ -358,13 +358,13 @@ python -m pytest tests/test_metrics.py
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **OEC** (Observatory of Economic Complexity) for trade data
 - **CCL** (Center for Collective Learning) for organizing the challenge
@@ -372,15 +372,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **IMF** for REER data
 - **FRED** for commodity price data
 
----
 
-## 📞 Contact & Links
-
-- **Challenge Website**: [Link to challenge page]
-- **OEC Platform**: https://oec.world/
-- **Documentation**: See `docs/` folder
-- **Issues**: Use GitHub Issues for questions/bugs
 
 ---
 
-**Good luck with the challenge! 🚀**
