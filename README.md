@@ -38,11 +38,17 @@ Our solution integrates multiple data sources:
 
 Our forecasting pipeline consists of:
 
-1. **Data Processing**: Aggregate trade data to HS4 level, filter countries with sufficient product diversity
-2. **Feature Engineering**: Integrate economic indicators, exchange rates, and commodity prices
-3. **Model Training**: Ensemble of gradient boosting models (CatBoost, XGBoost, LightGBM)
-4. **Forecast Generation**: Predict October 2025 trade values for submission
+1. **Data Processing**
+Aggregate monthly trade flows at the HS4-country-flow level and retain only series with sufficient history and diversity. Combine trade data with aligned macroeconomic, financial, and commodity-price indicators.
 
+2. **Feature Engineering**
+Create strictly forward-safe features including recent lags, seasonal signals, and target encodings. Select and lag external economic variables based on predictive relevance.
+
+3. **Model Training**
+Build a baseline naive forecast and train a global robust model to correct residuals, using backtesting to ensure stability. Prioritize resilience to outliers and missing data across product–country pairs.
+
+4. **Forecast Generation & Post-processing**
+Produce predictions for the target month, apply consistency checks, and cap unrealistic growth. Blend model output with the naive baseline to stabilize results before submission.
 ---
 
 ##  Repository Structure
